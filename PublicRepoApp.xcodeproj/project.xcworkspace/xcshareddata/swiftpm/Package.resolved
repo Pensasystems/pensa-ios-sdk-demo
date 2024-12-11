@@ -1,0 +1,24 @@
+{
+  "originHash" : "b5ff7215d12757ff37a2dca92d2059a087a2773109d7de182f26ae31e0944bf9",
+  "pins" : [
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast",
+      "state" : {
+        "revision" : "b39252eacd159904afd7d718bba0afabb87f2f2f",
+        "version" : "1.3.9"
+      }
+    },
+    {
+      "identity" : "pensa-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Pensasystems/pensa-ios-sdk",
+      "state" : {
+        "revision" : "7cb62225c9360c3336af43e0c37e6ca59fc99de0",
+        "version" : "0.0.9"
+      }
+    }
+  ],
+  "version" : 3
+}
