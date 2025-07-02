@@ -1,5 +1,5 @@
 {
-  "originHash" : "b5ff7215d12757ff37a2dca92d2059a087a2773109d7de182f26ae31e0944bf9",
+  "originHash" : "f42ce9c9bc307959a8edde1b09f4196f9e8d12449fcb5acc49ab89df92b5bde7",
   "pins" : [
     {
       "identity" : "alerttoast",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Pensasystems/pensa-ios-sdk",
       "state" : {
-        "revision" : "7cb62225c9360c3336af43e0c37e6ca59fc99de0",
-        "version" : "0.0.9"
+        "revision" : "58a28ea459ee3f5821ef99174c18434c8c5d8a97",
+        "version" : "1.0.1"
       }
     }
   ],
