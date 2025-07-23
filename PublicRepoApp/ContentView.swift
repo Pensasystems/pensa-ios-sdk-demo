@@ -18,6 +18,8 @@ struct ContentView: View {
     @State private var tdlinxCode = ""
     @State private var sectionKey = ""
     @State private var guid = ""
+    @State private var showScanAreaDialog = false
+    @State private var scanAreaIdInput = ""
 
     private let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 10, alignment: .top),
@@ -39,20 +41,34 @@ struct ContentView: View {
                         .padding()
                     Spacer().frame(height: 40)
                     LazyVGrid(columns: columns, spacing: 10) {
-                        MenuItemView(text: "Search Stores", image: "search_store") {
+                        MenuItemView(text: "Monitor Shelf Uploads", image: "monitor") {
                             if !shouldInitPensa() {
-                                Pensa.shared.displaySearchStore()     
+                                Pensa.shared.showShelfScans()
                             }
                         }
-
-                        MenuItemView(text: "Monitor Uploads", image: "monitor") {
+                        MenuItemView(text: "Monitor Product Uploads", image: "monitor") {
                             if !shouldInitPensa() {
-                                Pensa.shared.monitorUploads()
+                                Pensa.shared.showProductScans()
+                            }
+                        }
+                        MenuItemView(text: "Search Stores", image: "search_store") {
+                            if !shouldInitPensa() {
+                                Pensa.shared.showStoreSearchView()
                             }
                         }
                         MenuItemView(text: "Recent Stores", image: "shop_sdk") {
                             if !shouldInitPensa() {
-                                Pensa.shared.displayRecentlyVisitedStores()
+                                Pensa.shared.showStoresScreen()
+                            }
+                        }
+                        MenuItemView(text: "Launch Scan Area", image: "scan") {
+                            if !shouldInitPensa() {
+                                showScanAreaDialog = true
+                            }
+                        }
+                        MenuItemView(text: "Stocking Screen", image: "shop") {
+                            if !shouldInitPensa() {
+                                Pensa.shared.showStockingScreen()
                             }
                         }
                         MenuItemView(text: "Launch Store By GlobalStoreId", image: "scan") {
@@ -72,6 +88,52 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .font(.footnote)
                     .padding(.bottom, 16)
+            }
+            
+            if showScanAreaDialog {
+                Color.black.opacity(0.3)
+                    .edgesIgnoringSafeArea(.all)
+                    .onTapGesture {
+                        showScanAreaDialog = false
+                    }
+                
+                VStack(spacing: 16) {
+                    Text("Enter Scan Area ID")
+                        .foregroundColor(.black)
+                        .font(.headline)
+                    
+                    TextField("", text: $scanAreaIdInput, prompt: Text("ScanAreaId").foregroundColor(.gray))
+                        .keyboardType(.numberPad)
+                        .foregroundColor(.black)
+                        .padding(4)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(8)
+                    
+                    HStack {
+                        Button("Cancel") {
+                            showScanAreaDialog = false
+                        }
+                        .foregroundColor(.red)
+                        
+                        Spacer()
+                        
+                        Button("Submit") {
+                            if let scanId = Int(scanAreaIdInput) {
+                                Pensa.shared.showScanArea(with: scanId)
+                                showScanAreaDialog = false
+                            } else {
+                                toastMessage = "Please enter a valid scan area ID"
+                                showToast = true
+                            }
+                        }
+                        .disabled(scanAreaIdInput.isEmpty)
+                    }
+                }
+                .padding()
+                .background(Color.white)
+                .cornerRadius(12)
+                .frame(maxWidth: 300)
+                .padding(.horizontal, 40)
             }
 
             if showTdlinxDialog {
@@ -116,15 +178,17 @@ struct ContentView: View {
 
                         Button("Submit") {
                             if !tdlinxCode.isEmpty {
-                                Pensa.shared.displayStoreById(sectionKey: sectionKey.isEmpty ? nil : sectionKey,
-                                                              guid: guid.isEmpty ? nil : guid,
-                                                              globalStoreId: tdlinxCode,
-                                                              onError: { error in
-                                    
-                                    toastMessage = error.localizedDescription
-                                    showToast = true
-                                    
-                                })
+                                
+                                Pensa.shared.showStoreChecklist(
+                                    sectionKey: sectionKey,
+                                    guid: guid,
+                                    globalStoreId: tdlinxCode,
+                                    onError: { error in
+                                        
+                                        toastMessage = error.localizedDescription
+                                        showToast = true
+                                        
+                                    })
                                 showTdlinxDialog = false
                             } else {
                                 toastMessage = "GlobalStoreId is required"
