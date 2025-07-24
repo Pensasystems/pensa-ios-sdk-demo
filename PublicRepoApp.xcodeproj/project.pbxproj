@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA5AB7F82D96F9AE00A88FF2 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA5AB7F72D96F9AE00A88FF2 /* PensaSdk */; };
-		CA5AB7FB2D96FA5B00A88FF2 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = CA5AB7FA2D96FA5B00A88FF2 /* AlertToast */; };
+		CA06EE3A2DD3103300993689 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA06EE392DD3103300993689 /* PensaSdk */; };
+		CA06F1772DD31FD200993689 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA06F1762DD31FD200993689 /* PensaSdk */; };
+		CA06F17A2DD342E000993689 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA06F1792DD342E000993689 /* PensaSdk */; };
+		CA06F1832DD3496400993689 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA06F1822DD3496400993689 /* PensaSdk */; };
+		CA06F21A2DD34FD100993689 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA06F2192DD34FD100993689 /* PensaSdk */; };
+		CA3FE63A2E16F9D9003EA402 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA3FE6392E16F9D9003EA402 /* PensaSdk */; };
+		CA3FE68B2E16FC9B003EA402 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA3FE68A2E16FC9B003EA402 /* PensaSdk */; };
+		CA3FE6A82E16FFB1003EA402 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA3FE6A72E16FFB1003EA402 /* PensaSdk */; };
+		CA3FE6AB2E1702F7003EA402 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA3FE6AA2E1702F7003EA402 /* PensaSdk */; };
+		CA3FE6AE2E170638003EA402 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA3FE6AD2E170638003EA402 /* PensaSdk */; };
+		CA6015DE2E2E7E64008E6F61 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA6015DD2E2E7E64008E6F61 /* PensaSdk */; };
+		CA6016622E2FCEF8008E6F61 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA6016612E2FCEF8008E6F61 /* PensaSdk */; };
+		CA6016732E30CBEF008E6F61 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA6016722E30CBEF008E6F61 /* PensaSdk */; };
+		CA6016762E3126ED008E6F61 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = CA6016752E3126ED008E6F61 /* AlertToast */; };
+		CA6016792E3128C0008E6F61 /* PensaSdk in Frameworks */ = {isa = PBXBuildFile; productRef = CA6016782E3128C0008E6F61 /* PensaSdk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +54,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5AB7F82D96F9AE00A88FF2 /* PensaSdk in Frameworks */,
-				CA5AB7FB2D96FA5B00A88FF2 /* AlertToast in Frameworks */,
+				CA6016732E30CBEF008E6F61 /* PensaSdk in Frameworks */,
+				CA6016762E3126ED008E6F61 /* AlertToast in Frameworks */,
+				CA6016622E2FCEF8008E6F61 /* PensaSdk in Frameworks */,
+				CA06F1772DD31FD200993689 /* PensaSdk in Frameworks */,
+				CA3FE68B2E16FC9B003EA402 /* PensaSdk in Frameworks */,
+				CA3FE63A2E16F9D9003EA402 /* PensaSdk in Frameworks */,
+				CA3FE6A82E16FFB1003EA402 /* PensaSdk in Frameworks */,
+				CA06F17A2DD342E000993689 /* PensaSdk in Frameworks */,
+				CA06F21A2DD34FD100993689 /* PensaSdk in Frameworks */,
+				CA6016792E3128C0008E6F61 /* PensaSdk in Frameworks */,
+				CA06EE3A2DD3103300993689 /* PensaSdk in Frameworks */,
+				CA06F1832DD3496400993689 /* PensaSdk in Frameworks */,
+				CA6015DE2E2E7E64008E6F61 /* PensaSdk in Frameworks */,
+				CA3FE6AB2E1702F7003EA402 /* PensaSdk in Frameworks */,
+				CA3FE6AE2E170638003EA402 /* PensaSdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +119,21 @@
 			);
 			name = PublicRepoApp;
 			packageProductDependencies = (
-				CA5AB7F72D96F9AE00A88FF2 /* PensaSdk */,
-				CA5AB7FA2D96FA5B00A88FF2 /* AlertToast */,
+				CA06EE392DD3103300993689 /* PensaSdk */,
+				CA06F1762DD31FD200993689 /* PensaSdk */,
+				CA06F1792DD342E000993689 /* PensaSdk */,
+				CA06F1822DD3496400993689 /* PensaSdk */,
+				CA06F2192DD34FD100993689 /* PensaSdk */,
+				CA3FE6392E16F9D9003EA402 /* PensaSdk */,
+				CA3FE68A2E16FC9B003EA402 /* PensaSdk */,
+				CA3FE6A72E16FFB1003EA402 /* PensaSdk */,
+				CA3FE6AA2E1702F7003EA402 /* PensaSdk */,
+				CA3FE6AD2E170638003EA402 /* PensaSdk */,
+				CA6015DD2E2E7E64008E6F61 /* PensaSdk */,
+				CA6016612E2FCEF8008E6F61 /* PensaSdk */,
+				CA6016722E30CBEF008E6F61 /* PensaSdk */,
+				CA6016752E3126ED008E6F61 /* AlertToast */,
+				CA6016782E3128C0008E6F61 /* PensaSdk */,
 			);
 			productName = PublicRepoApp;
 			productReference = 15B582752CF49319002F8BD1 /* PublicRepoApp.app */;
@@ -125,8 +164,8 @@
 			mainGroup = 15B5826C2CF49319002F8BD1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CA5AB7F62D96F9AE00A88FF2 /* XCRemoteSwiftPackageReference "pensa-ios-sdk" */,
-				CA5AB7F92D96FA5B00A88FF2 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				CA6016702E30CBC4008E6F61 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				CA6016772E3128C0008E6F61 /* XCRemoteSwiftPackageReference "pensa-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 15B582762CF49319002F8BD1 /* Products */;
@@ -374,15 +413,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CA5AB7F62D96F9AE00A88FF2 /* XCRemoteSwiftPackageReference "pensa-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Pensasystems/pensa-ios-sdk";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.1;
-			};
-		};
-		CA5AB7F92D96FA5B00A88FF2 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+		CA6016702E30CBC4008E6F61 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/elai950/AlertToast";
 			requirement = {
@@ -390,18 +421,78 @@
 				minimumVersion = 1.3.9;
 			};
 		};
+		CA6016772E3128C0008E6F61 /* XCRemoteSwiftPackageReference "pensa-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Pensasystems/pensa-ios-sdk";
+			requirement = {
+				kind = revision;
+				revision = 0d802eea1dd17219b1034aa442ff950f852de9fb;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CA5AB7F72D96F9AE00A88FF2 /* PensaSdk */ = {
+		CA06EE392DD3103300993689 /* PensaSdk */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA5AB7F62D96F9AE00A88FF2 /* XCRemoteSwiftPackageReference "pensa-ios-sdk" */;
 			productName = PensaSdk;
 		};
-		CA5AB7FA2D96FA5B00A88FF2 /* AlertToast */ = {
+		CA06F1762DD31FD200993689 /* PensaSdk */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA5AB7F92D96FA5B00A88FF2 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = PensaSdk;
+		};
+		CA06F1792DD342E000993689 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA06F1822DD3496400993689 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA06F2192DD34FD100993689 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA3FE6392E16F9D9003EA402 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA3FE68A2E16FC9B003EA402 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA3FE6A72E16FFB1003EA402 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA3FE6AA2E1702F7003EA402 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA3FE6AD2E170638003EA402 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA6015DD2E2E7E64008E6F61 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA6016612E2FCEF8008E6F61 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA6016722E30CBEF008E6F61 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PensaSdk;
+		};
+		CA6016752E3126ED008E6F61 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA6016702E30CBC4008E6F61 /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
+		};
+		CA6016782E3128C0008E6F61 /* PensaSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA6016772E3128C0008E6F61 /* XCRemoteSwiftPackageReference "pensa-ios-sdk" */;
+			productName = PensaSdk;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

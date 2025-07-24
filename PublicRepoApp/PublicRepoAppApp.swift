@@ -49,8 +49,8 @@ extension PublicRepoAppApp: ScanUploadListener, CantScanEventListener {
             print("onScanUploadCompleted() -> Upload completed successfully tdlinxId: \(tdlinxId), scanAreaId: \(scanAreaId)")
     }
     
-    func onScanUploadFailed(tdlinxId: String, scanAreaId: String, error: CallbackError) {
-        print("onScanUploadFailed() -> Upload failed for tdlinxId: \(tdlinxId), scanAreaId: \(scanAreaId) Error Code: \(error.code.rawValue), Message: \(error.message)")
+    func onScanUploadFailed(tdlinxId: String, scanAreaId: String, error: Error) {
+        print("onScanUploadFailed() -> Upload failed for tdlinxId: \(tdlinxId), scanAreaId: \(scanAreaId) Error: \(error),")
     }
     
     func onCantScanReported(tdlinxId: String, scanAreaId: String, cantScanReason: String) {
